@@ -66,10 +66,10 @@ This third workshop continues to build on activities and achieved goals from tra
 
 During this workshop participants will:
 
-1. Develop a set of indicators of biodiversity change in coastal communities.
-1. Develop a comprehensive list of macro-invertebrate and macro-algae species for the region.
-1. Agree on a minimum set of physical variables that should be collected during biodiversity surveys of coastal areas.
-1. Learn to access and use satellite seascapes and other remote sensing variables to characterize environmental conditions at survey sites. 
+1. Develop a set of indicators of biodiversity change in coastal communities;
+1. Develop a comprehensive list of macro-invertebrate and macro-algae species for the region;
+1. Agree on a minimum set of physical variables that should be collected during biodiversity surveys of coastal areas;
+1. Learn to access and use satellite seascapes and other remote sensing variables to characterize environmental conditions at survey sites; 
 1. Test methods for assessing rocky shore biodiversity using photo-quadrats and imagery analysis;
 1. Develop specific Dawin Core vocabularies for flora and fauna of rocky shore and sandy beach measured during field surveys;
 1. Continue to publish survey datasets collected during 2019 and 2020 to the Ocean Biogeographic Information System ([OBIS](http://www.iobis.org/));
