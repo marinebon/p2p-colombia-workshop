@@ -1,13 +1,13 @@
 --- 
-title: "2nd Marine Biodiversity Workshop: from the Sea to the Cloud"
-date: "April 2-5, 2019"
+title: "3rd Marine Biodiversity Workshop: from the Sea to the Cloud"
+date: "May 4-8, 2020"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
 bibliography: [style/zotero_mbon-p2p.bib, style/packages.bib]
 biblio-style: apalike
 link-citations: yes
-github-repo: marinebon/p2p-mexico-workshop
+github-repo: marinebon/p2p-colombia-workshop
 description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
 ---
 
@@ -27,25 +27,11 @@ library(sf)
 opts_chunk$set(echo = F)
 ```
 
-Pole-to-Pole [MBON](marinebon.org) & [AmeriGEOSS](https://www.amerigeoss.org) <br>
-Location: Playa del Secreto, Puerto Morelos, Mexico <br>
-Dates: April 2-5, 2019
+[MBON Pole to Pole](https://marinebon.org/p2p/) & [AmeriGEO](https://www.amerigeoss.org) <br>
+Location: Santa Marta, Colombia <br>
+Dates: May 4-8, 2020
 
 # Overview
-
-## Workshop materials and outputs
-
-- [2nd Marine Biodiversity Worshop: from the Sea to the Cloud  - **Report from Mexico**](https://drive.google.com/file/d/1ayIPQWNORppACXKcnKn0kPuvAr_6fTCX/view?usp=sharing)
-
-- [Participants list](https://drive.google.com/file/d/18QkKpxDPEfi8OzRujfKaXJabBczX-7g7/view?usp=sharing)
-
-- [Agenda](https://drive.google.com/file/d/18porVMMxrnEg8i0qsF4zFhNAAQWNLhxo/view?usp=sharing)
-
-- [Course materials on Ocean Teacher Global Academy](https://classroom.oceanteacher.org/course/view.php?id=383)
-
-- [360 Virtual Tour at workshop site](http://www.northeastern.edu/helmuthlab/cancun.html)
-
-
 
 ```{r, eval=F}
 library(tidyverse)
@@ -74,36 +60,37 @@ if (is_latex_output()){
 }
 ```
 
-## Objectives
+## Workshop Objectives
 
-This second workshop builds on activities and achieved goals from a first meeting in Sao Sebastiao, Brazil, August 6-10, 2018. The purpose is to continue the development of a community of practice dedicated to understanding change in marine biodiversity and generating knowledge and products that inform conservation and management strategies of marine living resources by engaging researchers, managers and policy-makers with interest in biodiversity monitoring and data synthesis and analysis. During this workshop participants will:
+This third workshop continues to build on activities and achieved goals from training activities in [Brazil](https://marinebon.org/p2p-brazil-workshop/) and [Mexico](https://marinebon.org/p2p-mexico-workshop/). The purpose is to continue the development of a community of practice dedicated to understanding change in marine biodiversity and generating knowledge and products that inform conservation and management efforts across the Americas. 
 
-1. Advance already agreed field sampling protocols for rocky shores and sandy beaches;
-1. Manipulate tabular and spatial data already collected at their study sites for standardized data formats using Darwin Core vocabularies and quality controls;
-1. Develop specific vocabularies for flora and fauna of rocky shore and sandy beach measured during field surveys;
-1. Publish survey datasets to the Ocean Biogeographic Information System ([OBIS](http://www.iobis.org/)) using tools for sharing data;
-1. Advance knowledge on data science tools (R, Rmarkdown, Github) to mine data, visualize and analysis, and produce reproducible research documents with interactive visualizations onto the web.
+During this workshop participants will:
 
-![Rocky shore near workshop venue](figs/Cozumel_Sep2016.jpg)
+1. Learn to survey rocky shores using photo-quadrat collection and imagery analysis;
+1. Develop specific Dawin Core vocabularies for flora and fauna of rocky shore and sandy beach measured during field surveys;
+1. Publish survey datasets collected during 2019 and 2020 to the Ocean Biogeographic Information System ([OBIS](http://www.iobis.org/));
+1. Analyze survey data collected since [NaGISA](http://www.coml.org/natural-geography-shore-areas-nagisa/) to the present to examine biogeographical patterns and detect biodiversity change in coastal communities;
+1. Seagrasses - TBD
+ 
+
+![Tayrona National Park](figs/tayrona1.jpg)
 
 ## Logistics
 
-April 2-5, 2019 (+2 days for travel)
+Workshop dates: **May 4-8, 2020** (+2 days for travel)
 
 - **Venue:** 
-Playa del Secreto, Puerto Morelos <br>
-Unidad Académica de Sistemas Arrecifales ([UASA](https://www.icmyl.unam.mx/puerto_morelos/es/quienes-somos/la-unidad-academica)) <br>
-Instituto de Ciencias del Mar y Limnología ([ICML](https://www.icmyl.unam.mx/)) <br>
-Universidad Nacional Autónoma de México ([UNAM](https://www.unam.mx/)) <br>
-Puerto Morelo <br> 
-Quintana Roo, Mexico
+ Marine and Coastal Research Institute "José Benito Vives de Andréis" ([INVEMAR](http://www.invemar.org.co/)) <br>
+Santa Marta <br> 
+Magdalena, Colombia
 
+![INVEMAR - Santa Marta, Colombia](figs/invemar_building.jpg)
 ```{r}
 pts <- tribble(
         ~lon,       ~lat,       ~name,    ~icon,   ~color,          ~description,                                ~comment,
-  -86.8736, 21.040300, "Cancun International Airport",  "plane",  "green",   "Cancun International Airport",                                      NA,
-  -86.945114, 20.775402,      "Playa del Secreto", "home", "red", "venue for the MBON Pole to Pole workshop", NA,
-  -86.867217, 20.868086,   "UASA - UNAM", "rocket", "orange",  "host institution for the MBON Pole to Pole workshop", NA) %>%
+  -74.2327, 11.1172, "Simon Bolivar International Airport", "plane", "green",   "International Airport", NA,
+  -74.2261, 11.19194,      "INVEMAR", "home", "red", "Host institution for the workshop", NA,
+  -74.07, 11.31,   "Tayrona National Park", "rocket", "orange",  "Tayrona National Park", NA) %>%
   st_as_sf(coords = c("lon", "lat"), crs = 4326)
 
 ctr <- pts$geometry %>% st_geometrycollection() %>% st_centroid() %>% st_coordinates()
@@ -121,21 +108,21 @@ leaflet(pts, options = leafletOptions(attributionControl=F)) %>%
   setView(ctr[,"X"], ctr[,"Y"], zoom=10)
 ```
 
-
 ## Organizers
 
--	Marine Biodiversity Observation Network ([MBON](http://www.marinebon.org/)) Pole to Pole of the Americas - MBON Pole to Pole
--	Instituto de Ciencias Marinas y Limnológicas, Universidad Nacional Autónoma de México ([ICML](https://www.icmyl.unam.mx/) - UNAM)
--	AmeriGEOSS - Group on Earth Observations
+-	Marine Biodiversity Observation Network Pole to Pole of the Americas - [MBON Pole to Pole](https://marinebon.org/p2p/)
+-	Marine and Coastal Research Institute "José Benito Vives de Andréis" ([INVEMAR](http://www.invemar.org.co/))
+-	[AmeriGEO](https://www.amerigeoss.org/) - Group on Earth Observations
 -	Ocean Biogeographic Information System ([OBIS](http://www.iobis.org/); IOC-UNESCO)
 - Global Ocean Observing System ([GOOS](http://www.goosocean.org/); IOC-UNESCO)
-- Atlantic International Research Centre ([AIR Centre](https://www.aircentre.org/))
+- Ocean Best Practice System ([OBPS](https://www.oceanbestpractices.net/); IOC-UNESCO)
+- Ocean Teacher Global Academy ([OTGA](https://classroom.oceanteacher.org/))
 
 ## Workshop rationale
 
-The **MBON Pole to Pole** is organizing a second Marine Biodiversity Workshop - From the Sea to the Cloud - after a successful first workshop held during the 2018 AmeriGEOSS Week in Brazil. This activity advances the implementation of the MBON Pole to Pole network by enhancing knowledge on field data collection methods and use of informatic technologies for data management and analysis. 
+The [MBON Pole to Pole](https://marinebon.org/p2p/) is organizing a third **Marine Biodiversity Workshop - From the Sea to the Cloud** after two successful workshops held in [Brazil](https://marinebon.org/p2p-brazil-workshop/) and [Mexico](https://marinebon.org/p2p-mexico-workshop/) since 2018. This activity advances the implementation of the MBON Pole to Pole network by enhancing knowledge on field data collection methods and use of informatic technologies for data management and analysis. 
 
-The MBON Pole to Pole aims to address the biodiversity priorities of various GEO initiatives, including Blue Planet and AmeriGEOSS, and coordinates with the Global Ocean Observing System (GOOS) of the Intergovernmental Oceanographic Commission of UNESCO and OBIS, and other national and international groups to serve the broadest possible community. This network will help nations and regions to improve conservation planning and environmental impact mitigation, serve the scientific community, and satisfy commitments to the Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services (IPBES), Aichi Targets of the Convention of Biological Diversity (CBD), and the UN 2030 Agenda for Sustainable Development Goals (SDG’s).
+The [MBON Pole to Pole](https://marinebon.org/p2p/) aims to address the biodiversity priorities of various GEO initiatives, including [GEO Blue Planet](https://geoblueplanet.org/) and [AmeriGEO](https://www.amerigeoss.org/), and coordinates with the Global Ocean Observing System ([GOOS](https://www.goosocean.org/)) and the Ocean Best Practice System ([OBPS](https://www.oceanbestpractices.net/)) of the Intergovernmental Oceanographic Commission of UNESCO,  [OBIS](http://www.iobis.org/), and other national and international groups to serve the broadest possible community. This network aims to help nations and regions to improve conservation planning and environmental impact mitigation, serve the scientific community, and satisfy commitments to the Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services (IPBES), Aichi Targets of the Convention of Biological Diversity (CBD), and the UN 2030 Agenda for Sustainable Development Goals (SDG’s).
 
 The MBON Pole to Pole workshops:
 
@@ -144,11 +131,13 @@ The MBON Pole to Pole workshops:
 - support the integration of biodiversity information with physical and chemical data over time (status and trends); and
 - generates products needed for informed policy and management of the ocean.
 
-The workshop targets investigators and resource managers dedicated to studying and conserving biodiversity of invertebrates in two important coastal habitats: rocky shore intertidal zone and sandy beaches. This activity targets participants from all nations in the Americas, from pole to pole.
+The workshop targets investigators and resource managers dedicated to studying and conserving biodiversity of invertebrates in three important coastal habitats: rocky shore intertidal zone, sandy beaches and seagrass beds (in collaboration with [MarineGEO](https://marinegeo.si.edu/)). This activity targets participants from all nations in the Americas, from pole to pole.
 
 ## Instructors
 - Enrique Montes ([IMaRS](http://imars.usf.edu/); USF) - Project lead and workshop coordinator
-- Patricia Miloslavich ([GOOS Biology & Ecosystem Panel](http://goosocean.org/index.php?option=com_content&view=article&id=79&Itemid=273)) - Protocols of the South American Research Group on Coastal Ecosystems (SARCE) and Essential Ocean/Biodiversity Variables (EOV/EBV) framework
+- Patricia Miloslavich (SCOR) - TBD
+- Emmett Duffy ([MarineGEO](https://marinegeo.si.edu/initiative/leadership)) - TBD
+- Lauren Weatherdon ([UNEP-WCMC](https://www.unep-wcmc.org/employees/lauren-weatherdon)) - TBD
 - Maria Kavanaugh ([OSU](http://ceoas.oregonstate.edu/profile/kavanaugh/), USA) - Satellite biogeography (seascape maps)
 - Eduardo Klein ([OBIS](http://iobis.org/)) - Darwin Core (DwC), WoRMS species catalog for taxonomic quality control, and OBIS tools
 - Ben Best ([Ecoquants](https://ecoquants.com/)) - Data wrangling, visualization and analysis with R software, collaborative research platforms (Github, Git, RMarkdown)
@@ -156,17 +145,15 @@ The workshop targets investigators and resource managers dedicated to studying a
 - Abigail Benson ([OBIS-USA](https://www.usgs.gov/core_science_systems/sas/obis-usa); USGS) - Darwin Core (DwC)**
 - Sennai Habtes ([UVI](https://www.uvi.edu/directory/profiles/staff/habtes-sennai-y.aspx)) - Statistical applications in coastal ecology and biodiversity assessments
 - Frank Muller-Karger ([IMaRS](http://imars.usf.edu/); USF) - Satellite remote sensing
-- Gil Rilov ([Israel Oceanographic and Limnological Research](http://www.ocean.org.il/eng/Researchers/page_gil.asp), Israel) -  Ecology of the rocky shore intertidal zone
 - Brian Helmuth ([Northeastern University](https://cos.northeastern.edu/faculty/brian-helmuth/), USA) - Drivers of biodiversity variability and change in the rocky shore intertidal zone
-- Rui Seabra ([CIBIO](https://cibio.up.pt/people/details/rseabra) - University of Porto) - [Biomimetic sensor](http://www.electricblue.eu/products/) data for understanding environmental variability in rocky shores and impact on biodiversity
-
+- Others? I propose Juan Pablo Livore, Gonzalo Bravo or Maria (Pitu) Mendez (CENPAT - IBIOMAR, Argentina) for photo-quadrats
 
 ## Required workshop materials
 
-- Participants must bring a laptop computer with the following programes installed (with latest version, as of 2018-03-20):
-    - [R](https://cran.r-project.org) (3.4.4)
-    - [RStudio](https://www.rstudio.com/products/rstudio/download/#download) (1.1.442)
-    - [Git](https://git-scm.com/downloads) (2.16.2)
+- Participants must bring a laptop computer with the following programes installed (with latest version, as of 2019-12-18):
+    - [R software](https://cran.r-project.org) (R-3.6.2)
+    - [RStudio](https://www.rstudio.com/products/rstudio/download/#download) (latest version)
+    - [Git](https://git-scm.com/downloads) (2.24.1)
     
     These are available for Windows, Mac or Linux operating systems.
 
@@ -176,43 +163,61 @@ The workshop targets investigators and resource managers dedicated to studying a
 source("https://raw.githubusercontent.com/marinebon/p2p-brazil-workshop/master/scripts/install-R-packages.R")
 ```
 
-- [SARCE Rocky Shore sampling protocols](http://sarce.cbm.usb.ve/for-scientists/)
+- [Sampling protocol for assessment of marine diversity on rocky shores. (Modified from the SARCE South American Research Group on Coastal Ecosystems for sampling on rocky shores protocol)](https://www.oceanbestpractices.net/handle/11329/1143)
   <!---The past experience could be replicated (and it will be desirable if we want to make comparison in time) see the SARCE site and it protocols. The SARCE data will be in OBIS after the next harvest. --->
 
-- [MBON Pole to Pole Sandy Beach sampling protocol](https://marinebon.github.io/p2p/methods_field_protocols.html)
+- [Sampling protocol for assessment of marine diversity on sandy beaches](https://www.oceanbestpractices.net/handle/11329/1145)
 
-- [Step-by-step taxonomy quality control with WoRMS](https://drive.google.com/file/d/1PoHpqUZsbz0OVcIyN1E8JtteyRC3370Q/view?usp=sharing)
+- [Step-by-step taxonomy quality control with WoRMS](https://marinebon.org/p2p/protocols/WoRMS_quality_check.pdf)
 
-- Full snorkeling gear
+- [HOW TO upload and publish your data in OBIS and GBIF](https://diodon.github.io/P2P/PublishingDataIPT.html)
 
-![Rocky shore near workshop venue](figs/Cozumel_Sep2016_4.jpg)
+- MarineGEO [Seagrass Monitoring Protocol](https://marinegeo.github.io/seagrass)
+
+- Neoprene boots.
+
+![Tayrona National Park](figs/tayrona2.jpg)
 
 ## Eligibility
 
-The workshop will be limited to 20 participants. Selection of participants will be based on results from the Application Survey (below) and their ability and willingness to openly share data through OBIS, sustain a collaborative long-term monitoring program in their study area, share best practices and contribute to achieving the overall goals of the MBON Pole to Pole. Priority will be given to participants of the previous workshop that conducted biodiversity surveys at their study sites as agreed during this activity and that have submitted data sheets to the MBON Pole to Pole Github repository. Applicants willing to use and share their own data are also eligible if specific information about their dataset is provided, study site(s) location(s), time span of their dataset and methods employed.
+The workshop will be limited to 15 participants. Selection of participants will be based on results from the Application Survey (below) and their ability and willingness to openly share data through [OBIS](http://www.iobis.org/), sustain a collaborative long-term monitoring program in their study area, share best practices and contribute to achieving the overall goals of the [MBON Pole to Pole](https://marinebon.org/p2p/). Priority will be given to participants of the previous workshop that conducted biodiversity surveys at their study sites and that have already submitted data to [OBIS](http://www.iobis.org/). Applicants willing to use and share their own data are also eligible if specific information about their dataset is provided, study site(s) location(s), time span of their dataset and methods employed.
 
-## Survey
+## Survey - THIS IS BEING UPDATED 
 
-In order to partcipate, you will need to complete the Application Survey below (be sure to scroll down within frame), or by visiting the survey directly at https://goo.gl/forms/e8luOKT4lOkeunQq1, before the survey deadline of **December 31, 2018** at 11:59pm (EST).
+In order to partcipate, you will need to complete the Application Survey below (be sure to scroll down within frame), or by visiting the survey directly at https://forms.gle/e3Wi23k53psARePo6, before the survey deadline of **January 17, 2020** at 11:59pm (EST).
 
-<iframe src="https://goo.gl/forms/q0PN12ncMF6RABGg2" width="760" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+<iframe src="https://forms.gle/e3Wi23k53psARePo6" width="760" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 
 ## Confirmation
 
-The Application Survey will be closed **December 31, 2018**, at midnight (EST). Candidates will receive notice of acceptance by **January 30th, 2019**. Selected participants must confirm attendance to the workshop by replying to the acceptance notification email before **February 15, 2019**.
+The Application Survey will be closed **January 31, 2020**, at midnight (EST). Candidates will receive notice of acceptance by **February 28th, 2020**. Selected participants must confirm attendance to the workshop by replying to the acceptance notification email before **March 20, 2020**.
 
-The workshop will provide partial or full travel support to a selected number of participants. Priority for travel suppor will be given to participants that completed biodiversity surveys **before December 31, 2018** as agreed during the first MBON Pole to Pole workshop, or that are able to bring other biodiversity survey data to the workshop.  
+The workshop will provide partial or full travel support to a selected number of participants. Priority for travel suppor will be given to participants that:
+
+1) have submitted biodiversity survey data to [OBIS](http://www.iobis.org/);
+2) have completed at least one biodiversity surveys at their study sites in **2019**;
+3) are able to bring previously collected biodiversity survey data to the workshop;
+4) are willing to upload their data to [OBIS](http://www.iobis.org/);
 
 ## Resources
 
-- [Ocean Biogeographic Information System (OBIS) - Manual](http://www.iobis.org/manual/)
+- [OBIS Manual](http://www.iobis.org/manual/)
+- [Ocean Best Practice System](https://www.oceanbestpractices.net/handle/11329/1142)
 - [R for Data Science](http://r4ds.had.co.nz/)
 - [Spatial Data Analysis and Modeling with R](http://rspatial.org)
 - [Species Distribution Modeling with R](https://cran.r-project.org/web/packages/dismo/vignettes/sdm.pdf)
+- Ocean Teacher Global Academy ([OTGA](https://classroom.oceanteacher.org/))
+
+## Materials and outputs from the previous workshop (April 2-5, 2019)
+
+- [2nd Marine Biodiversity Worshop: from the Sea to the Cloud  - **Report from Mexico**](https://drive.google.com/file/d/1ayIPQWNORppACXKcnKn0kPuvAr_6fTCX/view?usp=sharing)
+- [Participants list](https://drive.google.com/file/d/18QkKpxDPEfi8OzRujfKaXJabBczX-7g7/view?usp=sharing)
+- [Agenda](https://drive.google.com/file/d/18porVMMxrnEg8i0qsF4zFhNAAQWNLhxo/view?usp=sharing)
+- [Course materials on Ocean Teacher Global Academy](https://classroom.oceanteacher.org/course/view.php?id=383)
+- [360 Virtual Tour at workshop site](http://www.northeastern.edu/helmuthlab/cancun.html)
 
 
-
-The project is supported by the National Aeronautics and Space Administration (NASA) grant 80NSSC18K0318, ” Laying the foundations of the Pole-to-Pole Marine Biodiversity Observation Network (MBON) of the Americas”, and co-sponsored by AmeriGEOSS.
+The project is supported by the National Aeronautics and Space Administration (NASA) grant 80NSSC18K0318, ” Laying the foundations of the Pole-to-Pole Marine Biodiversity Observation Network (MBON) of the Americas”, and co-sponsored by AmeriGEO.
 
 
 ![](figs/NASA_logo.png)
@@ -220,10 +225,10 @@ The project is supported by the National Aeronautics and Space Administration (N
 ![](figs/MBON_logo.jpg)
 <br>
 <br>
-![](figs/amerigeoss_800.png)
+![](figs/AmeriGEOLogo.png)
 <br>
 <br>
-![](figs/BannerAvisoComunidadICML.jpg)
+![](figs/logo_invemar.png)
 <br>
 <br>
 ![](figs/GOOS_Biology-and-Ecosystems_WhiteUNFRAMED_logo.png)
@@ -232,5 +237,4 @@ The project is supported by the National Aeronautics and Space Administration (N
 <br>
 <br>
 ![](figs/IOC_logo.png)
-<br>
-![](figs/aircentre_logo.png)
+
