@@ -1,5 +1,5 @@
-# p2p-mexico-workshop
-MBON Pole-to-Pole &amp; Colombia 2020-05
+# p2p-colombia-workshop
+MBON Pole-to-Pole workshop in Santa Marta, Colombia, 2020-05
 
 This website is generated using:
 
