@@ -71,8 +71,8 @@ During this workshop participants will:
 1. Develop a comprehensive list of macro-invertebrate and macro-algae species for the region;
 1. Agree on a minimum set of physical variables that should be collected during biodiversity surveys of coastal areas;
 1. Learn to access and use satellite seascapes and other remote sensing variables to characterize environmental conditions at survey sites; 
-1. Test methods for assessing rocky shore biodiversity using photo-quadrats and imagery analysis;
-1. Develop specific Dawin Core vocabularies for flora and fauna of rocky shore and sandy beach measured during field surveys;
+1. Test methods for surveying rocky shore biodiversity using photo-quadrats and imagery analysis;
+1. Develop specific Dawin Core vocabularies for flora and fauna of rocky shore and sandy beach communities;
 1. Continue to publish survey datasets collected during 2019 and 2020 to the Ocean Biogeographic Information System ([OBIS](http://www.iobis.org/));
 1. Analyze survey data collected since [NaGISA](http://www.coml.org/natural-geography-shore-areas-nagisa/) to the present to examine biogeographical patterns and detect biodiversity change in coastal communities;
  
@@ -136,7 +136,7 @@ The MBON Pole to Pole workshops:
 - support the integration of biodiversity information with physical and chemical data over time (status and trends); and
 - generates products needed for informed policy and management of the ocean.
 
-The workshop targets investigators and resource managers dedicated to studying and conserving biodiversity of invertebrates in three important coastal habitats: rocky shore intertidal zone, sandy beaches. This activity will be carried out in coordination with the Seagrass [MarineGEO](https://marinegeo.si.edu/). This activity targets participants from all nations in the Americas, from pole to pole.
+The workshop targets investigators and resource managers dedicated to studying and conserving biodiversity of rocky shore intertidal zone, sandy beaches and seagrass communities. This activity will be carried out in partnership with the Coordinated Global Research Assessment of Seagrass System ([C-GRASS](https://scor-int.org/group/coordinated-global-research-assessment-of-seagrass-system-c-grass/)) led by [MarineGEO](https://marinegeo.si.edu/) and [UNEP-WCMC](https://www.unep-wcmc.org/). This activity targets participants from all nations in the Americas, from pole to pole.
 
 ## Instructors
 - Enrique Montes ([IMaRS](http://imars.usf.edu/); USF) - Project lead and workshop coordinator
@@ -147,16 +147,16 @@ The workshop targets investigators and resource managers dedicated to studying a
 - Eduardo Klein ([OBIS](http://iobis.org/)) - Darwin Core (DwC), WoRMS species catalog for taxonomic quality control, and OBIS tools
 - Ben Best ([Ecoquants](https://ecoquants.com/)) - Data wrangling, visualization and analysis with R software, collaborative research platforms (Github, Git, RMarkdown)
 - Jonathan Lefchek ([MarineGEO - Smithsonian I.](https://jonlefcheck.net/)) - Data science tools for seagrass ecology and biodiversity
-- Abigail Benson ([OBIS-USA](https://www.usgs.gov/core_science_systems/sas/obis-usa); USGS) - Darwin Core (DwC)**
+- Abigail Benson ([OBIS-USA](https://www.usgs.gov/core_science_systems/sas/obis-usa); USGS) - TBD
 - Sennai Habtes ([UVI](https://www.uvi.edu/directory/profiles/staff/habtes-sennai-y.aspx)) - Statistical applications in coastal ecology and biodiversity assessments
 - Frank Muller-Karger ([IMaRS](http://imars.usf.edu/); USF) - Satellite remote sensing
 
 ## Required workshop materials
 
 - Participants must bring a laptop computer with the following programes installed (with latest version, as of 2019-12-18):
-    - [R software](https://cran.r-project.org) (R-3.6.2)
-    - [RStudio](https://www.rstudio.com/products/rstudio/download/#download) (latest version)
-    - [Git](https://git-scm.com/downloads) (2.24.1)
+    - [R software](https://cran.r-project.org) (R-3.6.2);
+    - [RStudio](https://www.rstudio.com/products/rstudio/download/#download) (latest version);
+    - [Git](https://git-scm.com/downloads) (2.24.1);
     
     These are available for Windows, Mac or Linux operating systems.
 
@@ -166,16 +166,17 @@ The workshop targets investigators and resource managers dedicated to studying a
 source("https://raw.githubusercontent.com/marinebon/p2p-brazil-workshop/master/scripts/install-R-packages.R")
 ```
 
-- [Sampling protocol for assessment of marine diversity on rocky shores. (Modified from the SARCE South American Research Group on Coastal Ecosystems for sampling on rocky shores protocol)](https://www.oceanbestpractices.net/handle/11329/1143)
-  <!---The past experience could be replicated (and it will be desirable if we want to make comparison in time) see the SARCE site and it protocols. The SARCE data will be in OBIS after the next harvest. --->
+- Sampling protocol for assessment of marine diversity on rocky shores (Modified from the South American Research Group on Coastal Ecosystems for sampling on rocky shores protocol): [SARCE Protocol](https://www.oceanbestpractices.net/handle/11329/1143);
 
-- [Sampling protocol for assessment of marine diversity on sandy beaches](https://www.oceanbestpractices.net/handle/11329/1145)
+- Sampling protocol for assessment of marine diversity on sandy beaches:  [MBON Pole to Pole Sandy Beach Protocol](https://www.oceanbestpractices.net/handle/11329/1145);
 
-- [Step-by-step taxonomy quality control with WoRMS](https://marinebon.org/p2p/protocols/WoRMS_quality_check.pdf)
+- MarineGEO field survey protocol and resources for [Seagrass Habitats](https://marinegeo.github.io/seagrass)
 
-- [HOW TO upload and publish your data in OBIS and GBIF](https://diodon.github.io/P2P/PublishingDataIPT.html)
+- Step-by-step taxonomy quality control with [WoRMS](https://marinespecies.org/): [MBON Pole to Pole Quality Check Manual](https://marinebon.org/p2p/protocols/WoRMS_quality_check.pdf);
 
-- Neoprene boots.
+- HOW-TO upload and publish your data in OBIS and GBIF: [MBON Pole to Pole Data Upload Manual](https://diodon.github.io/P2P/PublishingDataIPT.html);
+
+- Neoprene shoes and clothing appropriate for field work.
 
 ![Tayrona National Park](figs/tayrona2.jpg)
 
@@ -191,13 +192,13 @@ In order to partcipate, you will need to complete the Application Survey below (
 
 ## Confirmation
 
-The Application Survey will be closed **January 31, 2020**, at midnight (EST). Candidates will receive notice of acceptance by **February 21st**. Selected participants must confirm attendance to the workshop by replying to the acceptance notification email before **March 6th**.
+The Application Survey will be closed **January 17, 2020**, at midnight (EST). Candidates will receive notice of acceptance by **February 21st**. Selected participants must confirm attendance to the workshop by replying to the acceptance notification email before **March 6th**.
 
 The workshop will provide partial or full travel support to a selected number of participants. Priority for travel suppor will be given to participants that:
 
 1) have submitted biodiversity survey data to [OBIS](http://www.iobis.org/);
 2) have participated in previous MBON Pole to Pole workshops;
-3) have applied sampling protocols of the MBON Pole to Pole network;
+3) have applied sampling protocols of the MBON Pole to Pole network at their study sites;
 4) have completed at least one biodiversity surveys at their study sites in **2019**;
 5) are able to bring previously collected biodiversity survey data to the workshop;
 6) are willing to upload their data to [OBIS](http://www.iobis.org/);
