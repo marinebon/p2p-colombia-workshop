@@ -26,12 +26,13 @@ library(leaflet)
 library(sf)
 opts_chunk$set(echo = F)
 ```
+# [MBON Pole to Pole of the Americas](https://marinebon.org/p2p/)
+-- **Location: Santa Marta, Colombia** <br>
+-- **Dates: May 4-8, 2020**
 
-[MBON Pole to Pole](https://marinebon.org/p2p/) & [AmeriGEO](https://www.amerigeoss.org) <br>
-Location: Santa Marta, Colombia <br>
-Dates: May 4-8, 2020
-
-# Overview
+![](figs/MBON_logo_small.jpg) ![](figs/nasa-logo_small.png) ![](figs/marinegeo_logo_small.png) 
+<br>
+![](figs/spacer.jpg) ![](figs/AmeriGEOLogo_small.png) ![](figs/logo_invemar_small.png) 
 
 ```{r, eval=F}
 library(tidyverse)
@@ -62,7 +63,7 @@ if (is_latex_output()){
 
 ## Workshop Objectives
 
-This third workshop continues to build on activities and achieved goals from training activities in [Brazil](https://marinebon.org/p2p-brazil-workshop/) and [Mexico](https://marinebon.org/p2p-mexico-workshop/). The purpose is to continue the development of a community of practice dedicated to understanding change in marine biodiversity and generating knowledge and products that inform conservation and management efforts across the Americas. 
+The [MBON Pole to Pole](https://marinebon.org/p2p/) is preparing a third workshop to build on activities and achieved goals from training activities in [Brazil](https://marinebon.org/p2p-brazil-workshop/) and [Mexico](https://marinebon.org/p2p-mexico-workshop/). The purpose is to continue the development of a community of practice dedicated to understanding change in marine biodiversity and generating knowledge and products that inform conservation and management efforts across the Americas. 
 
 During this workshop participants will:
 
@@ -228,6 +229,10 @@ The project is supported by the National Aeronautics and Space Administration (N
 <br>
 <br>
 ![](figs/AmeriGEOLogo.png)
+<br>
+<br>
+![](figs/marinegeo_logo.png)
+
 <br>
 <br>
 ![](figs/logo_invemar.png)
