@@ -70,11 +70,11 @@ During this workshop participants will:
 1. Develop a set of indicators of biodiversity change in coastal communities;
 1. Develop a comprehensive list of macro-invertebrate and macro-algae species for the region;
 1. Agree on a minimum set of physical variables that should be collected during biodiversity surveys of coastal areas;
-1. Learn to access and use satellite seascapes and other remote sensing variables to characterize environmental conditions at survey sites; 
+1. Learn to access and use [satellite seascapes](https://coastwatch.noaa.gov/cw/satellite-data-products/multi-parameter-models/seascape-pelagic-habitat-classification.html) and other remote sensing variables to characterize environmental conditions at survey sites; 
 1. Test methods for surveying rocky shore biodiversity using photo-quadrats and imagery analysis;
 1. Develop specific Dawin Core vocabularies for flora and fauna of rocky shore and sandy beach communities;
 1. Continue to publish survey datasets collected during 2019 and 2020 to the Ocean Biogeographic Information System ([OBIS](http://www.iobis.org/));
-1. Analyze survey data collected since [NaGISA](http://www.coml.org/natural-geography-shore-areas-nagisa/) to the present to examine biogeographical patterns and detect biodiversity change in coastal communities;
+1. Analyze survey data collected since [NaGISA](http://www.coml.org/natural-geography-shore-areas-nagisa/) to the present to examine biogeographical patterns and detect biodiversity change in coastal communities.
  
 
 ![Tayrona National Park](figs/tayrona1.jpg)
