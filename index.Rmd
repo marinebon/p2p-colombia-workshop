@@ -74,7 +74,7 @@ During this workshop participants will:
 1. Test methods for surveying rocky shore biodiversity using photo-quadrats and imagery analysis;
 1. Develop specific Dawin Core vocabularies for flora and fauna of rocky shore and sandy beach communities;
 1. Continue to publish survey datasets collected during 2019 and 2020 to the Ocean Biogeographic Information System ([OBIS](http://www.iobis.org/));
-1. Analyze survey data collected since [NaGISA](http://www.coml.org/natural-geography-shore-areas-nagisa/) to the present to examine biogeographical patterns and detect biodiversity change in coastal communities.
+1. Analyze survey data collected since [NaGISA](http://www.coml.org/natural-geography-shore-areas-nagisa/) to the present to examine biogeographical patterns and detect biodiversity change in coastal communities along both coasts of the continent.
  
 
 ![Tayrona National Park](figs/tayrona1.jpg)
