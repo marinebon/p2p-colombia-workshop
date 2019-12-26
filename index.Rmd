@@ -8,7 +8,7 @@ bibliography: [style/zotero_mbon-p2p.bib, style/packages.bib]
 biblio-style: apalike
 link-citations: yes
 github-repo: marinebon/p2p-colombia-workshop
-description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
+description: "Website of the 3rd Marine Biodiversity Workshop: from the Sea to the Cloud, organized by the MBON Pole to Pole of the Americas"
 ---
 
 ```{r include=FALSE, eval=F}
