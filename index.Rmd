@@ -33,6 +33,9 @@ opts_chunk$set(echo = F)
 ![](figs/MBON_logo_small.jpg) ![](figs/nasa-logo_small.png) ![](figs/marinegeo_logo_small.png) 
 <br>
 ![](figs/spacer.jpg) ![](figs/AmeriGEOLogo_small.png) ![](figs/logo_invemar_small.png) 
+<br>
+<br>
+![](figs/spacer.jpg) ![](figs/OTLogo5_small.jpg) 
 
 ```{r, eval=F}
 library(tidyverse)
@@ -210,7 +213,7 @@ The workshop will provide partial or full travel support to a selected number of
 - [R for Data Science](http://r4ds.had.co.nz/)
 - [Spatial Data Analysis and Modeling with R](http://rspatial.org)
 - [Species Distribution Modeling with R](https://cran.r-project.org/web/packages/dismo/vignettes/sdm.pdf)
-- Ocean Teacher Global Academy ([OTGA](https://classroom.oceanteacher.org/))
+- Ocean Teacher Global Academy workshop resources ([OTGA](https://www.oceanexpert.net/event/2620))
 
 ## Materials and outputs from the previous workshop (April 2-5, 2019)
 
@@ -242,6 +245,9 @@ The project is supported by the National Aeronautics and Space Administration (N
 ![](figs/GOOS_Biology-and-Ecosystems_WhiteUNFRAMED_logo.png)
 <br>
 ![](figs/obis_logo.jpg)
+<br>
+<br>
+![](figs/OTLogo5.jpg)
 <br>
 <br>
 ![](figs/IOC_logo.png)
