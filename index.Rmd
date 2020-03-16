@@ -28,7 +28,9 @@ opts_chunk$set(echo = F)
 ```
 # [MBON Pole to Pole of the Americas](https://marinebon.org/p2p/)
 -- **Location: Santa Marta, Colombia** <br>
--- **Dates: May 4-8, 2020**
+-- **Dates: May 4-8, 2020** 
+
+THIS EVENT HAS BEEN POSTPONED DUE TO THE COVID-19 OUTBREAK. NEW DATES ARE TBD AND WILL BE ANNOUNCED AS SOON AS POSSIBLE.
 
 ![](figs/MBON_logo_small.jpg) ![](figs/nasa-logo_small.png) ![](figs/marinegeo_logo_small.png) 
 <br>
